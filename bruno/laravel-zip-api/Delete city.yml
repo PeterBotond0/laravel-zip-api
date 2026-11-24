@@ -1,0 +1,18 @@
+info:
+  name: Delete city
+  type: http
+  seq: 12
+
+http:
+  method: DELETE
+  url: http://localhost:8000/api/cities/1
+
+  auth:
+    type: bearer
+    token: '{{token}}'
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
